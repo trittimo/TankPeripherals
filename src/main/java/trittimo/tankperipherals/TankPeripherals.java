@@ -14,6 +14,7 @@ import net.minecraftforge.fluids.IFluidHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import trittimo.peripheralcore.CallMethodHandler;
 
 @Mod(modid = TankPeripherals.MODID, version = TankPeripherals.VERSION,
 		dependencies = "required-after:ComputerCraft@[1.79,]")
