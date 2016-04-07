@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "trittimo.tankperipherals",
+  "name": "Tank Peripherals",
+  "description": "Adds ComputerCraft integration to tanks",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["trittimo"],
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
