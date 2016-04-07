@@ -65,22 +65,14 @@ public class TankPeripherals {
 
 		@Override
 		public String[] getMethodNames() {
-			return handler.getMethods();
+			return handler.getMethodNames();
 		}
 
 		@Override
 		public Object[] callMethod(IComputerAccess computer, ILuaContext context, int method,
 				Object[] arguments) throws LuaException, InterruptedException {
-			try {
-				Object[] args = new Object[] { tank, computer, context, arguments };
-				return handler.callMethod(method, methodSignature, args);
-			} catch (RuntimeException e) {
-				return new Object[] { e.getMessage() };
-			} catch (Exception e) {
-				return new Object[] { e.toString() };
-			} catch (Throwable e) {
-				return new Object[] { e.getMessage() };
-			}
+			Object[] args = new Object[] { tank, computer, context, arguments };
+			return handler.callMethod(method, methodSignature, args);
 		}
 
 		@Override

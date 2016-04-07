@@ -61,7 +61,7 @@ public class TankMethods {
 
 	public static Object[] getCapacity(IFluidHandler tank, IComputerAccess computer, ILuaContext context,
 			Object[] args) {
-		CallMethodHandler.checkArguments(new Object[] { "UP", new Integer(0) }, args);
+		CallMethodHandler.checkArguments(new Object[] { "UP", 0 }, args);
 		EnumFacing direction = EnumFacing.byName((String) args[0]);
 		FluidTankInfo info = tank.getTankInfo(direction)[((Double) args[1]).intValue()];
 		try {
