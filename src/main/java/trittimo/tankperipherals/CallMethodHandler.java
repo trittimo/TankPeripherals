@@ -6,9 +6,6 @@ import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import dan200.computercraft.api.lua.ILuaContext;
-import dan200.computercraft.api.peripheral.IComputerAccess;
-
 public class CallMethodHandler {
 	private String[] methods;
 	private Class callClass;
